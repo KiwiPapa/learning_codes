@@ -1,0 +1,9 @@
+QPushButton#Btn2
+{
+    background:yellow;
+}
+
+QLabel#L1
+{
+    background:cyan;
+}

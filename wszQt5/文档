@@ -1,0 +1,91 @@
+选择器[:伪状态]
+{
+	声明内容
+}
+
+选择器一堆：
+通配符选择器  * 适用于公共控件
+类型选择器
+类选择器
+ID选择器
+属性选择器
+后代选择器
+子选择器
+子控件选择器
+
+类型选择器
+QWidget
+{
+	.....
+}
+适用于QWidget对象以及QWidget的子类对象。这点也很容易理解，嗯嗯
+ID选择器和属性选择器
+objectName 
+标签变色：
+.QLabel[notice_level='error']
+{
+	border: 3px solid red;
+}
+
+.QLabel[notice_level='warning']
+{
+	border: 3px solid yellow;
+}
+
+要给标签1设置属性：
+label1.setProperty("notice_level","warning")
+这条语句是不是  self.notice_level="warning"是这个意思吗？
+为什么都是字符串呢？？
+估计也可以写成 label1.setProperty("notice_level",1)
+后代选择器 间接包含和直接包含
+怎么找盒子2，box2，应该通过ID选择器来选择吗？
+要求在盒子2里找到标签子控件
+QWidget#box2 QLabel
+{
+	...
+}
+这就找到了。
+现在找 盒子2里的盒子3里的标签2！
+没找，管他呢
+
+子选择器 
+QWidget#box2>QLabel 大于号 父控件>子控件
+{
+	...
+}
+子控件选择器
+一个大控件会包含许多的子控件 比如 QCheckBox::indicator,这个
+就非常精细了。
+
+伪状态： hover鼠标移动在控件上产生的事件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

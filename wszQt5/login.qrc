@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="loginBtn">
+    <file>resource/Violet.png</file>
+  </qresource>
+</RCC>
